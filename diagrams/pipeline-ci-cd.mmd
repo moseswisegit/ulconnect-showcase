@@ -1,0 +1,19 @@
+flowchart TD
+    PR["Pull request"] --> CI
+    subgraph CI["Workflow CI (chaque PR et chaque push sur main)"]
+        B1["API : compilation Release<br/>+ tests xUnit"]
+        B2["Mobile : vérification TypeScript"]
+        B3["Console : compilation Vite"]
+    end
+
+    MAIN["Fusion sur main"] --> GATE
+    subgraph CD["Workflow de déploiement (un seul à la fois)"]
+        GATE["Tests de l'API<br/>(barrière de déploiement)"]
+        GATE --> IMG["Construction de l'image Docker<br/>étiquetée avec le SHA du commit"]
+        IMG --> REG["Publication dans un registre<br/>de conteneurs privé"]
+        REG --> APP["Déploiement de l'image<br/>sur App Service"]
+        GATE --> SPA["Compilation de la console<br/>URL de l'API injectée au build"]
+        SPA --> UP["Téléversement vers<br/>le site statique Blob"]
+    end
+
+    APP --> START["Démarrage du conteneur :<br/>migrations EF Core appliquées"]

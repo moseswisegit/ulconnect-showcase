@@ -1,0 +1,20 @@
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Fichiers sensibles : ne jamais les ajouter à ce dépôt
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+appsettings.*.json
+
+# Dépendances et sorties temporaires
+node_modules/
+*.log

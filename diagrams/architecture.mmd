@@ -1,0 +1,32 @@
+flowchart LR
+    subgraph Clients
+        M["Application mobile<br/>Expo / React Native"]
+        W["Console d'administration<br/>React + Vite (site statique)"]
+    end
+
+    CDN["CDN et DNS<br/>Cloudflare"]
+
+    subgraph Hebergement["Hébergement Azure"]
+        API["API ASP.NET Core 8<br/>conteneur Docker sur App Service"]
+        HUB["Hub SignalR<br/>(messagerie temps réel)"]
+        JOBS["Tâches de fond<br/>rappels, purge, résumé, push"]
+        DB[("Base PostgreSQL")]
+        BLOB[("Stockage Blob<br/>photos privées")]
+        STATIC[("Stockage Blob<br/>site statique de la console")]
+    end
+
+    MAIL["Relais SMTP<br/>Brevo"]
+    PUSH["Service push Expo<br/>vers APNs / FCM"]
+
+    M -- "HTTPS + JWT" --> API
+    M -- "WebSocket" --> HUB
+    W --> CDN
+    CDN --> STATIC
+    W -- "HTTPS + cookie HttpOnly" --> API
+    API --- HUB
+    API --- JOBS
+    API --> DB
+    API -- "URL signées" --> BLOB
+    JOBS --> MAIL
+    API --> MAIL
+    JOBS --> PUSH

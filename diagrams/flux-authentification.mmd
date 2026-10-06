@@ -1,0 +1,29 @@
+sequenceDiagram
+    autonumber
+    actor E as Étudiant
+    participant App as Application mobile
+    participant API as API
+    participant DB as Base PostgreSQL
+    participant Mail as Relais SMTP
+
+    E->>App: Saisit son adresse universitaire
+    App->>API: Demande de code
+    API->>API: Limites par adresse et par IP
+    API->>DB: Enregistre le code haché, expiration courte
+    API->>Mail: Envoie le code à 6 chiffres
+    Mail-->>E: Courriel avec le code
+    E->>App: Saisit le code
+    App->>API: Vérification du code
+    API->>DB: Compare, compte les essais (5 au maximum)
+    API-->>App: Jeton d'accès JWT court + jeton de renouvellement
+    App->>App: Stockage dans le trousseau sécurisé
+
+    Note over App,API: Plus tard, jeton d'accès expiré
+    App->>API: Renouvellement avec le jeton de renouvellement
+    API->>DB: Rotation : ancien jeton révoqué, nouveau émis
+    alt Jeton déjà utilisé (rejeu)
+        API->>DB: Révocation de toutes les sessions du compte
+        API-->>App: 401, nouvelle connexion requise
+    else Jeton valide
+        API-->>App: Nouveau couple de jetons
+    end
