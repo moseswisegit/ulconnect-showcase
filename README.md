@@ -196,12 +196,20 @@ Feuille de route complète : [docs/feuille-de-route.md](docs/feuille-de-route.md
 
 ## Captures d'écran
 
-Visuels préparés pour la fiche Google Play. Toutes les données affichées (noms, messages, annonces, compteurs) sont des données de démonstration : l'application n'a pas encore d'utilisateurs réels.
+Ces images sont les **maquettes de conception** réalisées avec Claude Design, qui ont servi de référence à l'implémentation des écrans. Les noms, messages et chiffres sont fictifs ; les compteurs qui pouvaient laisser croire à des utilisateurs réels, les adresses courriel et les noms associés à des signalements ont été floutés. L'application n'a pas encore d'utilisateurs réels.
+
+### Application mobile
 
 | | | |
 |---|---|---|
-| ![Accueil : carte Rencontre avec photos floutées et carte Étude avec les cours de l'étudiant](screenshots/01-accueil.png) | ![Étude : onglet Équipes avec l'équipe de l'étudiant et les équipes de travaux pratiques qui recrutent](screenshots/02-equipes.png) | ![Rencontre : carte de découverte d'un profil avec photo floutée et centres d'intérêt](screenshots/03-rencontre.png) |
-| ![Communauté : logement, dons, emplois, événements, objets perdus et boîte à suggestions](screenshots/04-communaute.png) | ![Messagerie : liste des conversations filtrées par catégorie](screenshots/05-messagerie.png) | ![Conversation en temps réel entre deux étudiants à propos d'un cours](screenshots/06-conversation.png) |
+| ![Écran d'accueil : connexion avec l'adresse universitaire](screenshots/01-connexion.png) | ![Saisie du code de vérification à 6 chiffres reçu par courriel](screenshots/02-code.png) | ![Accueil : carte Rencontre avec photos floutées et carte Étude avec les partenaires libres](screenshots/03-accueil.png) |
+| ![Étude, onglet Partenaires : étudiants disponibles dans les mêmes cours](screenshots/04-etude-partenaires.png) | ![Étude, onglet Équipes : équipe dirigée et équipes de travaux pratiques qui recrutent](screenshots/05-etude-equipes.png) | ![Mon horaire : cours et créneaux libres transformés en disponibilités](screenshots/06-horaire.png) |
+| ![Communauté : logement, dons, emplois, événements, objets perdus et boîte à suggestions](screenshots/07-communaute.png) | ![Messagerie : liste des conversations](screenshots/08-conversations.png) | ![Conversation en temps réel avec mode flou des photos](screenshots/09-conversation.png) |
+| ![Profil : complétion du profil et statistiques](screenshots/10-profil.png) | ![Réglages : notifications, données personnelles (Loi 25), apparence](screenshots/11-reglages.png) | ![Accueil en mode sombre](screenshots/12-mode-sombre.png) |
+
+### Console d'administration
+
+![Console d'administration : file de modération des signalements, noms floutés](screenshots/13-console-moderation.png)
 
 ## Contact
 
