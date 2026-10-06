@@ -196,14 +196,12 @@ Feuille de route complète : [docs/feuille-de-route.md](docs/feuille-de-route.md
 
 ## Captures d'écran
 
-Liste des captures attendues : [screenshots/README.md](screenshots/README.md).
+Visuels préparés pour la fiche Google Play. Toutes les données affichées (noms, messages, annonces, compteurs) sont des données de démonstration : l'application n'a pas encore d'utilisateurs réels.
 
 | | | |
 |---|---|---|
-| ![Écran de connexion avec saisie de l'adresse universitaire](screenshots/01-connexion.png) | ![Saisie du code de vérification à 6 chiffres](screenshots/02-code.png) | ![Écran de consentement : âge, conditions et politique de confidentialité](screenshots/03-consentement.png) |
-| ![Onglet Accueil avec les cartes Étude, Rencontre et Sur le campus](screenshots/04-accueil.png) | ![Liste des partenaires d'étude disponibles dans un cours](screenshots/05-entraide.png) | ![Horaire personnel avec les disponibilités entre les cours](screenshots/06-horaire.png) |
-| ![Conversation en temps réel entre deux étudiants](screenshots/07-messagerie.png) | ![Accueil de la Communauté : logement, dons, emplois, objets perdus](screenshots/08-communaute.png) | ![Onglet Profil avec anneau de complétion](screenshots/09-profil.png) |
-| ![Écran de l'application en mode sombre](screenshots/10-mode-sombre.png) | ![Console d'administration : file de modération](screenshots/11-console-moderation.png) | ![Console d'administration : liste des utilisateurs avec données fictives](screenshots/12-console-utilisateurs.png) |
+| ![Accueil : carte Rencontre avec photos floutées et carte Étude avec les cours de l'étudiant](screenshots/01-accueil.png) | ![Étude : onglet Équipes avec l'équipe de l'étudiant et les équipes de travaux pratiques qui recrutent](screenshots/02-equipes.png) | ![Rencontre : carte de découverte d'un profil avec photo floutée et centres d'intérêt](screenshots/03-rencontre.png) |
+| ![Communauté : logement, dons, emplois, événements, objets perdus et boîte à suggestions](screenshots/04-communaute.png) | ![Messagerie : liste des conversations filtrées par catégorie](screenshots/05-messagerie.png) | ![Conversation en temps réel entre deux étudiants à propos d'un cours](screenshots/06-conversation.png) |
 
 ## Contact
 

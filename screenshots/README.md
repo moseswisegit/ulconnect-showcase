@@ -1,20 +1,25 @@
-# Captures d'écran à fournir
+# Captures d'écran
 
-Format conseillé : PNG, captures d'un téléphone Android (largeur 1080 px environ), en mode clair sauf indication contraire. Utiliser uniquement des comptes et des données de démonstration : aucun nom, photo ou adresse courriel réels.
+Visuels de la fiche Google Play, 1080 x 1920 px. Toutes les données affichées sont des données de démonstration.
 
-| Fichier | Écran à capturer |
+| Fichier | Écran |
 |---|---|
-| `01-connexion.png` | Écran d'accueil et saisie de l'adresse universitaire |
-| `02-code.png` | Saisie du code à 6 chiffres |
-| `03-consentement.png` | Écran de consentement (âge, conditions, politique de confidentialité) |
-| `04-accueil.png` | Onglet Accueil (cartes Étude, Rencontre et « Sur le campus ») |
-| `05-entraide.png` | Liste des partenaires d'étude dans un cours |
-| `06-horaire.png` | Mon horaire avec les disponibilités |
-| `07-messagerie.png` | Une conversation en temps réel |
-| `08-communaute.png` | Accueil de la Communauté (logement, dons, emplois, objets perdus) |
-| `09-profil.png` | Onglet Profil avec l'anneau de complétion |
-| `10-mode-sombre.png` | Un écran au choix en mode sombre |
-| `11-console-moderation.png` | Console d'administration : file de modération |
-| `12-console-utilisateurs.png` | Console d'administration : liste des utilisateurs (données fictives) |
+| `01-accueil.png` | Onglet Accueil : cartes Rencontre et Étude |
+| `02-equipes.png` | Étude, onglet Équipes : équipes de travaux pratiques |
+| `03-rencontre.png` | Rencontre : découverte de profils, photo floutée |
+| `04-communaute.png` | Communauté : logement, dons, emplois, événements, objets perdus |
+| `05-messagerie.png` | Liste des conversations filtrées par catégorie |
+| `06-conversation.png` | Conversation en temps réel |
 
-Facultatif : `demo.mp4` ou un lien vers une vidéo de démonstration de 60 à 90 secondes (connexion, accueil, entraide, messagerie, console).
+## Captures qui pourraient compléter la présentation
+
+Facultatif, avec des données fictives uniquement :
+
+| Fichier suggéré | Écran |
+|---|---|
+| `07-consentement.png` | Écran de consentement (âge, conditions, politique de confidentialité) |
+| `08-mode-sombre.png` | Un écran en mode sombre |
+| `09-console-moderation.png` | Console d'administration : file de modération |
+| `10-console-utilisateurs.png` | Console d'administration : liste des utilisateurs |
+
+Une vidéo de démonstration de 60 à 90 secondes (`demo.mp4` ou lien) serait aussi utile.
