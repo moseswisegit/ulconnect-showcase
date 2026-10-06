@@ -1,6 +1,6 @@
 # Décisions techniques
 
-Chaque décision est décrite à partir de ce qui est observable dans le code et la configuration. Quand la raison d'un choix n'est pas documentée dans le dépôt, elle est signalée par « Justification à confirmer par l'auteur ».
+Chaque décision est décrite à partir de ce qui est observable dans le code et la configuration, complété par les raisons données par l'auteur.
 
 ---
 
@@ -114,11 +114,3 @@ Chaque décision est décrite à partir de ce qui est observable dans le code et
 - Un seul artefact à déployer, et pas de service supplémentaire à payer.
 - L'API tourne volontairement sur une seule instance, pour simplifier l'exploitation tant qu'il n'y a pas d'utilisateurs réels : pas de verrou distribué, pas de cache partagé externe, pas de service SignalR géré.
 - En contrepartie, passer à plusieurs instances demandera d'isoler ou de verrouiller ces tâches, de partager le cache et de brancher le service SignalR géré (déjà prévu par configuration).
-
----
-
-## 8. Versions de .NET différentes pour l'API et les tests
-
-**Constat.** L'API cible .NET 8 ; le projet de tests cible .NET 10. Le pipeline installe donc les deux SDK.
-
-**Justification à confirmer par l'auteur.**
